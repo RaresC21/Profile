@@ -23,3 +23,15 @@ Range queries are a fundamental operation used in many applications, especially 
 For instance, consider the range sum problem. Here, the function f simply takes the sum of its inputs. We may compute the sum of all prefixed of the array: P[i] = X[1] + X[2] + ... + X[i]. Then, given a query (l,r) the answer is simply P[r] - P[l-1]. This partitioning scheme makes use of the fact that summation has an inverse, subtraction. We are interested in a broader class of functions. To answer any query (l,r) we are only allowed to use precomputed ranges which form a partition of (l,r). This allows for functions such as min, max, gcd, and various others. See the paper below for more details.
 
 I have worked on finding better partitioning schemes. Given an array of length n, we require O(n log n) preprocessing time to compute solutions to various ranges, and O(1) time to answer any query afterwards. More [details](https://raresc21.github.io/Profile/pdf/Range_Queries.pdf), and an [implementation](https://github.com/RaresC21/Data-Structures/blob/master/NovelRangeQuery/NovelRangeQuery.cpp).
+
+# Lectures
+
+### Programming Team
+
+I have given several lectures at Georgia Tech's programming team on advanced algorithms and data structures in preparation for programming contests, and the International Collegiate Programming Contest (ICPC) in particular. I have given lectures on topics such as
+
+1. Topological Sort
+2. Segment Trees - [slides](https://raresc21.github.io/Profile/pdf/segment_tree.pdf)
+3. DP Optimization using convex envelopes of linear functions
+4. Geometry - Triangulation, Convex Hull
+
