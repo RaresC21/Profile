@@ -15,3 +15,11 @@ In particular, we consider the orbit created by the free motion of a point parti
 <img src="images/billiards.png" alt="hi" class="inline"/>
 
 For more details on the reduction from volume to sampling and chaos and billiards, see [here](https://github.com/RaresC21/Profile/blob/master/pdf/Deterministic_Volume_Approximation.pdf)
+
+### Range Queries
+
+Range queries are a fundamental operation used in many applications, especially as database queries. Here, we restrict ourselves to queries on a static, one-dimensional array, X. A classic example includes finding the minimum entry in a contiguous subarray. More generally, we are given some fixed function f, and a sequence of queries (l,r) to compute f(X[l], X[l+1], ..., X[r]). Most data structures preprocess the array to determine the value of f for a particular subset P of ranges. To answer any query, they simply merge the solutions from a subset of precomputed ranges in P. 
+
+For instance, consider the range sum problem. Here, the function f simply takes the sum of its inputs. We may compute the sum of all prefixed of the array: P[i] = X[1] + X[2] + ... + X[i]. Then, given a query (l,r) the answer is simply P[r] - P[l-1]. This partitioning scheme makes use of the fact that summation has an inverse, subtraction. We are interested in a broader class of functions. To answer any query (l,r) we are only allowed to use precomputed ranges which form a partition of (l,r).
+
+I have worked on finding better partitioning schemes. Given an array of length n, we require O(n log n) preprocessing time to compute solutions to various ranges, and O(1) time to answer any query afterwards. More [details](https://github.com/RaresC21/Data-Structures/blob/master/NovelRangeQuery/Range_Queries.pdf), and an [implementation](https://github.com/RaresC21/Data-Structures/blob/master/NovelRangeQuery/NovelRangeQuery.cpp).
