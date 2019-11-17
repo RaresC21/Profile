@@ -35,3 +35,15 @@ I have given several lectures at Georgia Tech's programming team on advanced alg
 3. DP Optimization using convex envelopes of linear functions
 4. Geometry - Triangulation, Convex Hull
 
+### Theory Club 
+
+I have presented an introductory talk at Georgia Tech's undergrad Theory Club on Ergodic Theory, specifically in the setting of chaotic dynamical systems. Slides can be found [here](https://raresc21.github.io/Profile/pdf/IntroductionErgodicTheory.pdf). It includes 
+
+1. Chaos
+- Examples, Logistic Family
+- Lyapunov Exponents, Hyperbolicity
+- Shadowing, Proof for contractions
+2. Ergodic Theory
+- Birkhoff Ergodic Theorem
+- Transfer Operator
+- Mixing, Decay of Correlations
