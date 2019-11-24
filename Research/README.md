@@ -12,7 +12,7 @@ We investigate whether the notion of chaos can serve as a substitute for randomn
 
 In particular, we consider the orbit created by the free motion of a point particle inside the polytope with mirror-like reflections off the boundary. Figure (a) depicts the trajectory of a point particle in a square. However this system is not chaotic as translating the initial point will result in largely the same result. To remedy this, we introduce an inward curvature to the boundary. Figure (b) depicts the trajectory of the same initial point, only with circles placed around the boundary.
 
-<img src="images/billiards.png" alt="hi" class="inline"/>
+<img src="../images/billiards.png" alt="hi" class="inline"/>
 
 For more details on the reduction from volume to sampling and chaos and billiards, see [here](https://raresc21.github.io/Profile/pdf/Deterministic_Volume_Approximation.pdf)
 
