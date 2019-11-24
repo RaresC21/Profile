@@ -1,3 +1,5 @@
+My name is Rares Cristian, and I am a fourth year undergraduate student at Georgia Institute of Technology.
+
 # Research 
 
 ### Deterministic Volume Approximation of Polytopes
@@ -20,11 +22,15 @@ For more details on the reduction from volume to sampling and chaos and billiard
 
 Range queries are a fundamental operation used in many applications, especially as database queries. Here, we restrict ourselves to queries on a static, one-dimensional array, X. A classic example includes finding the minimum entry in a contiguous subarray. More generally, we are given some fixed function f, and a sequence of queries (l,r) to compute f(X[l], X[l+1], ..., X[r]). Most data structures preprocess the array to determine the value of f for a particular subset P of ranges. To answer any query, they simply merge the solutions from a subset of precomputed ranges in P. 
 
-For instance, consider the range sum problem. Here, the function f simply takes the sum of its inputs. We may compute the sum of all prefixed of the array: P[i] = X[1] + X[2] + ... + X[i]. Then, given a query (l,r) the answer is simply P[r] - P[l-1]. This partitioning scheme makes use of the fact that summation has an inverse, subtraction. We are interested in a broader class of functions. To answer any query (l,r) we are only allowed to use precomputed ranges which form a partition of (l,r). This allows for functions such as min, max, gcd, and various others. See the paper below for more details.
+For instance, consider the range sum problem. Here, the function f simply takes the sum of its inputs. We may compute the sum of all prefixes of the array: P[i] = X[1] + X[2] + ... + X[i]. Then, given a query (l,r) the answer is simply P[r] - P[l-1]. This partitioning scheme makes use of the fact that summation has an inverse: subtraction. We are interested in a broader class of functions. To answer any query (l,r) we are only allowed to use precomputed ranges which form a partition of (l,r). This allows for functions such as min, max, gcd, and various others. See the paper below for more details.
 
 I have worked on finding better partitioning schemes. Given an array of length n, we require O(n log n) preprocessing time to compute solutions to various ranges, and O(1) time to answer any query afterwards. More [details](https://raresc21.github.io/Profile/pdf/Range_Queries.pdf), and an [implementation](https://github.com/RaresC21/Data-Structures/blob/master/NovelRangeQuery/NovelRangeQuery.cpp).
 
-# Lectures
+
+
+# Teaching
+
+I have had the pleasure of being a teaching assistant for the Algorithms and Data Structures classes at GaTech (CS 3510, CS 3511).
 
 ### Programming Team
 
